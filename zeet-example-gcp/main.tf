@@ -80,7 +80,7 @@ module "vpc" {
   subnets = [
     {
       subnet_name   = "zeet-${var.cluster_name}-subnet-01"
-      subnet_ip     = "10.0.0.0/19"
+      subnet_ip     = "10.0.0.0/16"
       subnet_region = var.region
       subnet_private_access = true
     }
